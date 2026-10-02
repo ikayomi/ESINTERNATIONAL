@@ -43,9 +43,9 @@ button,
 
 button:hover,
 .btn:hover {
-  background-color: gold;
-  border-color: gold;
-  color: #0B3D2E;
+  background-color: #4F157F;
+  border-color: #4F157F;
+  color: white ;
 }
 
 
@@ -83,7 +83,7 @@ nav .logo p {
 }
 
 .navlist li:hover {
-  border-bottom-color: gold;
+  border-bottom-color: #4F157F;
 }
 
 
@@ -180,7 +180,7 @@ nav .logo p {
 .target {
   flex: 1 1 0;
   background: #F6F8F4;
-  border-left: 3px solid gold;
+  border-left: 3px solid #4F157F;
   padding: 24px;
 }
 
@@ -298,7 +298,7 @@ footer ul li{
 }
 
 footer ul li:hover{
-  color: #D4AF37;
+  color: #4F157F;
 }
 
 .footer-logo p{
@@ -315,16 +315,12 @@ footer ul li:hover{
 }
 
 .footer-icons i{
-  border: 1px solid white;
-  margin-right: 5px;
-  padding: 5px;
-  border-radius: 50%;
   font-size: 12px;
 }
 
 .footer-icons i:hover{
-  border-color: #D4AF37;
-  color: #D4AF37;
+  border-color: #4F157F;
+  color: #4F157F;
 }
 
 
