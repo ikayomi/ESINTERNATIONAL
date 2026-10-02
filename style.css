@@ -1,0 +1,430 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #042C18;
+  line-height: 1.5;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+button,
+.btn {
+  display: inline-block;
+  border: 1px solid #0B3D2E;
+  color: white;
+  background-color: #0B3D2E;
+  font-size: 15px;
+  font-family: inherit;
+  border-radius: 15px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: gold;
+  border-color: gold;
+  color: #0B3D2E;
+}
+
+
+/* ---------- Nav ---------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 28px;
+  color: #0B3D2E;
+  box-shadow: 0 2px 12px rgba(16, 32, 26, 0.08);
+}
+
+nav .logo p {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  font-size: 15px;
+}
+
+.navlist li {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.navlist li:hover {
+  border-bottom-color: gold;
+}
+
+
+/* ---------- Hero and carousel ---------- */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  margin-top: 20px;
+  padding: 90px 24px 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-carousel {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-carousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.hero-content .btn {
+  pointer-events: auto;
+}
+
+.hero h1 {
+  color: #F6F8F4;
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  color: #CFE3D6;
+  max-width: 520px;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+
+/* ---------- Who is it for -------- */
+.identity {
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 20px 28px;
+}
+
+.identity h3 {
+  color: #042C18;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.target {
+  flex: 1 1 0;
+  background: #F6F8F4;
+  border-left: 3px solid gold;
+  padding: 24px;
+}
+
+.target h4 {
+  color: #0B3D2E;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.target p {
+  font-size: 15px;
+  color: #3C5D53;
+}
+
+
+/* ------ SLADD'S CLUB ------ */
+.sladd{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.sladd-img{
+  background-color: #0B3D2E;
+  flex-basis: 50%;
+  text-align: center;
+  padding: 100px;
+  color: #F6F8F4;
+}
+
+.sladd-text{
+  background-color: #F6F8F4;
+  border: 0.5px solid #3C5D53;
+  flex-basis: 50%;
+  text-align: center;
+  padding: 100px;
+  color: #0B3D2E;
+}
+
+
+/* ------ EMPEROR'S ------ */
+.emperor{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.emperor-text{
+  background-color: #F6F8F4;
+  border: 0.5px solid #3C5D53;
+  flex-basis: 60%;
+  text-align: center;
+  padding: 100px;
+  color: #0B3D2E;
+}
+
+.emperor-img{
+  background-color: #0B3D2E;
+  flex-basis: 40%;
+  text-align: center;
+  padding: 100px;
+  color: #F6F8F4;
+}
+
+
+/* ---------- CTA ---------- */
+.cta{
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background: linear-gradient(135deg, #0B3D2E 0%, #3C5D53 60%, #5E8574 100%);
+}
+
+
+/* ---------- Footer ---------- */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  background-color: #0B3D2E;
+  color: white;
+  padding: 50px;
+}
+
+footer div{
+  flex: 1;
+}
+
+.footer-context{
+  flex: 1.4;
+}
+
+footer h5{
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px;
+  color: #D4AF37; 
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li{
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+footer ul li:hover{
+  color: #D4AF37;
+}
+
+.footer-logo p{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  margin: 0 0 5px;
+}
+
+.footer-text p{
+  font-size: 15px;
+  max-width: 220px;
+  margin: 0 0 10px;
+}
+
+.footer-icons i{
+  border: 1px solid white;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.footer-icons i:hover{
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+
+@media (max-width: 767px) {
+
+  .container {
+    padding: 10px;
+  }
+
+
+  nav {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav .logo p {
+    font-size: 14px;
+  }
+
+  .navlist {
+    display: none;
+  }
+
+  button,
+  .btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+
+  .hero {
+    padding: 40px 16px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .hero p {
+    max-width: 280px;
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+
+  .identity {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .identity h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .box-1 {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .target {
+    padding: 16px;
+  }
+
+  .target h4 {
+    font-size: 16px;
+  }
+
+  .target p {
+    font-size: 14px;
+  }
+
+
+  .sladd,
+  .emperor {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .sladd-img,
+  .sladd-text,
+  .emperor-img,
+  .emperor-text {
+    flex-basis: auto;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+
+  .cta{
+    padding: 36px 20px;
+  }
+
+  footer{
+    flex-direction: column;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+}
